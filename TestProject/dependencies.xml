@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ProjectDependencies xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <NugetDependencies>
+        <NugetDependency>
+            <Id>ExcelNumberFormat</Id>
+            <Version>1.1.0</Version>
+            <SourceId xsi:nil="true" />
+        </NugetDependency>
+        <NugetDependency>
+            <Id>RBush.Signed</Id>
+            <Version>4.0.0</Version>
+            <SourceId xsi:nil="true" />
+        </NugetDependency>
+        <NugetDependency>
+            <Id>Microsoft.CSharp</Id>
+            <Version>4.7.0</Version>
+            <SourceId xsi:nil="true" />
+        </NugetDependency>
+        <NugetDependency>
+            <Id>ClosedXML</Id>
+            <Version>0.95.4</Version>
+            <SourceId xsi:nil="true" />
+        </NugetDependency>
+        <NugetDependency>
+            <Id>System.Memory</Id>
+            <Version>4.6.3</Version>
+            <SourceId xsi:nil="true" />
+        </NugetDependency>
+        <NugetDependency>
+            <Id>System.Buffers</Id>
+            <Version>4.6.1</Version>
+            <SourceId xsi:nil="true" />
+        </NugetDependency>
+        <NugetDependency>
+            <Id>System.Numerics.Vectors</Id>
+            <Version>4.6.1</Version>
+            <SourceId xsi:nil="true" />
+        </NugetDependency>
+        <NugetDependency>
+            <Id>DocumentFormat.OpenXml</Id>
+            <Version>2.7.2</Version>
+            <SourceId xsi:nil="true" />
+        </NugetDependency>
+        <NugetDependency>
+            <Id>Newtonsoft.Json</Id>
+            <Version>13.0.4</Version>
+            <SourceId xsi:nil="true" />
+        </NugetDependency>
+        <NugetDependency>
+            <Id>System.Runtime</Id>
+            <Version>4.3.1</Version>
+            <SourceId xsi:nil="true" />
+        </NugetDependency>
+    </NugetDependencies>
+    <Namespaces>
+        <ProjectNamespace>
+            <FullName>System</FullName>
+        </ProjectNamespace>
+        <ProjectNamespace>
+            <FullName>System.Collections.Generic</FullName>
+        </ProjectNamespace>
+        <ProjectNamespace>
+            <FullName>System.Linq</FullName>
+        </ProjectNamespace>
+        <ProjectNamespace>
+            <FullName>System.Data</FullName>
+        </ProjectNamespace>
+        <ProjectNamespace>
+            <FullName>System.Data.Common</FullName>
+        </ProjectNamespace>
+        <ProjectNamespace>
+            <FullName>System.Text</FullName>
+        </ProjectNamespace>
+        <ProjectNamespace>
+            <FullName>LTools.Scripting.Model</FullName>
+        </ProjectNamespace>
+        <ProjectNamespace>
+            <FullName>LTools.Network.Model</FullName>
+        </ProjectNamespace>
+        <ProjectNamespace>
+            <FullName>System.IO</FullName>
+        </ProjectNamespace>
+        <ProjectNamespace>
+            <FullName>LTools.Data.Elements.DateTime</FullName>
+        </ProjectNamespace>
+        <ProjectNamespace>
+            <FullName>LTools.Data.View.DateTime</FullName>
+        </ProjectNamespace>
+        <ProjectNamespace>
+            <FullName>System.Text.RegularExpressions</FullName>
+        </ProjectNamespace>
+        <ProjectNamespace>
+            <FullName>Newtonsoft.Json</FullName>
+        </ProjectNamespace>
+        <ProjectNamespace>
+            <FullName>Newtonsoft.Json.Linq</FullName>
+        </ProjectNamespace>
+    </Namespaces>
+</ProjectDependencies>
