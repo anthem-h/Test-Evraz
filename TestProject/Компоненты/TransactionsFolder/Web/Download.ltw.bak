@@ -111,10 +111,6 @@
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
-                    <Name>Annotation</Name>
-                </SerializationItem>
-                <SerializationItem>
-                    <IsListValue>false</IsListValue>
                     <Name>TextTag</Name>
                 </SerializationItem>
                 <SerializationItem>
@@ -148,6 +144,10 @@
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>WaitAfter</Name>
+                </SerializationItem>
+                <SerializationItem>
+                    <IsListValue>false</IsListValue>
+                    <Name>Annotation</Name>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -855,6 +855,15 @@
                             <AssemblyName>LTools.Workflow, Version=1.0.6.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
                             <Properties>
                                 <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>ComponentName</Name>
+                                    <Value xsi:type="xsd:string">Множественное присвоение</Value>
+                                </SerializationItem>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>Annotation</Name>
+                                </SerializationItem>
+                                <SerializationItem>
                                     <IsListValue>true</IsListValue>
                                     <Name>Items</Name>
                                     <ListValue>
@@ -886,20 +895,11 @@
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
-                                    <Name>ComponentName</Name>
-                                    <Value xsi:type="xsd:string">Множественное присвоение</Value>
-                                </SerializationItem>
-                                <SerializationItem>
-                                    <IsListValue>false</IsListValue>
                                     <Name>WaitBefore</Name>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
                                     <Name>WaitAfter</Name>
-                                </SerializationItem>
-                                <SerializationItem>
-                                    <IsListValue>false</IsListValue>
-                                    <Name>Annotation</Name>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -2013,6 +2013,15 @@ if (!string.IsNullOrEmpty(matchedFile))
                             <AssemblyName>LTools.Workflow, Version=1.0.6.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
                             <Properties>
                                 <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>ComponentName</Name>
+                                    <Value xsi:type="xsd:string">Множественное присвоение</Value>
+                                </SerializationItem>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>Annotation</Name>
+                                </SerializationItem>
+                                <SerializationItem>
                                     <IsListValue>true</IsListValue>
                                     <Name>Items</Name>
                                     <ListValue>
@@ -2044,20 +2053,11 @@ if (!string.IsNullOrEmpty(matchedFile))
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
-                                    <Name>ComponentName</Name>
-                                    <Value xsi:type="xsd:string">Множественное присвоение</Value>
-                                </SerializationItem>
-                                <SerializationItem>
-                                    <IsListValue>false</IsListValue>
                                     <Name>WaitBefore</Name>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
                                     <Name>WaitAfter</Name>
-                                </SerializationItem>
-                                <SerializationItem>
-                                    <IsListValue>false</IsListValue>
-                                    <Name>Annotation</Name>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -2506,10 +2506,6 @@ System.IO.File.Delete(downloadFile);</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
-                    <Name>Annotation</Name>
-                </SerializationItem>
-                <SerializationItem>
-                    <IsListValue>false</IsListValue>
                     <Name>TextTag</Name>
                 </SerializationItem>
                 <SerializationItem>
@@ -2543,6 +2539,10 @@ System.IO.File.Delete(downloadFile);</Value>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>WaitAfter</Name>
+                </SerializationItem>
+                <SerializationItem>
+                    <IsListValue>false</IsListValue>
+                    <Name>Annotation</Name>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>

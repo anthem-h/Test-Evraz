@@ -420,11 +420,6 @@
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
-                    <Name>Annotation</Name>
-                    <Value xsi:type="xsd:string">Установка флага окончания</Value>
-                </SerializationItem>
-                <SerializationItem>
-                    <IsListValue>false</IsListValue>
                     <Name>TextTag</Name>
                 </SerializationItem>
                 <SerializationItem>
@@ -458,6 +453,11 @@
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>WaitAfter</Name>
+                </SerializationItem>
+                <SerializationItem>
+                    <IsListValue>false</IsListValue>
+                    <Name>Annotation</Name>
+                    <Value xsi:type="xsd:string">Установка флага окончания</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -1661,7 +1661,7 @@
                             <IsListValue>false</IsListValue>
                             <Name>Script</Name>
                             <Value xsi:type="xsd:string">// Метод валидации и создания директории
-F = (path, paramName, flagAddName) =&gt;
+checkFolder = (path, paramName, flagAddName) =&gt;
 {
     try
     {
@@ -1874,6 +1874,15 @@ checkURL = (url, paramName) =&gt;
                     <AssemblyName>LTools.Workflow, Version=1.0.6.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
                     <Properties>
                         <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>ComponentName</Name>
+                            <Value xsi:type="xsd:string">Множественное присвоение</Value>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>Annotation</Name>
+                        </SerializationItem>
+                        <SerializationItem>
                             <IsListValue>true</IsListValue>
                             <Name>Items</Name>
                             <ListValue>
@@ -1884,7 +1893,7 @@ checkURL = (url, paramName) =&gt;
                                         <Variable>resultExcelFile</Variable>
                                         <IsNoCodeVariable>false</IsNoCodeVariable>
                                         <Assign>Path.Combine(
-    F(Config["resultFilePath"].ToString().Trim(), "resultFilePath", false),
+    checkFolder(Config["resultFilePath"].ToString().Trim(), "resultFilePath", false),
     $"Результат_{DateTime.Now:yyyy.MM.dd_HH.mm.ss}.xlsx"
 )</Assign>
                                         <IsNoCodeAssign>false</IsNoCodeAssign>
@@ -1896,7 +1905,7 @@ checkURL = (url, paramName) =&gt;
                                     <Value xsi:type="MultipleAssignItem">
                                         <Variable>guidePath</Variable>
                                         <IsNoCodeVariable>false</IsNoCodeVariable>
-                                        <Assign>F(Config["guidePath"].ToString().Trim(), "guidePath", false)</Assign>
+                                        <Assign>checkFolder(Config["guidePath"].ToString().Trim(), "guidePath", false)</Assign>
                                         <IsNoCodeAssign>false</IsNoCodeAssign>
                                     </Value>
                                 </SerializationItem>
@@ -1906,7 +1915,7 @@ checkURL = (url, paramName) =&gt;
                                     <Value xsi:type="MultipleAssignItem">
                                         <Variable>mainFolder</Variable>
                                         <IsNoCodeVariable>false</IsNoCodeVariable>
-                                        <Assign>F(Config["mainFolder"].ToString().Trim(), "mainFolder", false)</Assign>
+                                        <Assign>checkFolder(Config["mainFolder"].ToString().Trim(), "mainFolder", false)</Assign>
                                         <IsNoCodeAssign>false</IsNoCodeAssign>
                                     </Value>
                                 </SerializationItem>
@@ -1936,7 +1945,7 @@ checkURL = (url, paramName) =&gt;
                                     <Value xsi:type="MultipleAssignItem">
                                         <Variable>userDataPath</Variable>
                                         <IsNoCodeVariable>false</IsNoCodeVariable>
-                                        <Assign>F(Config["userDataPath"]?.ToString().Trim(), nameDataPath, true)</Assign>
+                                        <Assign>checkFolder(Config["userDataPath"]?.ToString().Trim(), nameDataPath, true)</Assign>
                                         <IsNoCodeAssign>false</IsNoCodeAssign>
                                     </Value>
                                 </SerializationItem>
@@ -1946,7 +1955,7 @@ checkURL = (url, paramName) =&gt;
                                     <Value xsi:type="MultipleAssignItem">
                                         <Variable>pathExtension</Variable>
                                         <IsNoCodeVariable>false</IsNoCodeVariable>
-                                        <Assign>F(Config["pathExtension"]?.ToString().Trim(), "pathExtension", false)</Assign>
+                                        <Assign>checkFolder(Config["pathExtension"]?.ToString().Trim(), "pathExtension", false)</Assign>
                                         <IsNoCodeAssign>false</IsNoCodeAssign>
                                     </Value>
                                 </SerializationItem>
@@ -1956,7 +1965,7 @@ checkURL = (url, paramName) =&gt;
                                     <Value xsi:type="MultipleAssignItem">
                                         <Variable>businessExPath</Variable>
                                         <IsNoCodeVariable>false</IsNoCodeVariable>
-                                        <Assign>F(Config["BusinessExPath"]?.ToString()?.Trim(), "BusinessExPath", false)</Assign>
+                                        <Assign>checkFolder(Config["BusinessExPath"]?.ToString()?.Trim(), "BusinessExPath", false)</Assign>
                                         <IsNoCodeAssign>false</IsNoCodeAssign>
                                     </Value>
                                 </SerializationItem>
@@ -1966,7 +1975,7 @@ checkURL = (url, paramName) =&gt;
                                     <Value xsi:type="MultipleAssignItem">
                                         <Variable>systemExPath</Variable>
                                         <IsNoCodeVariable>false</IsNoCodeVariable>
-                                        <Assign>F(Config["SystemExPath"]?.ToString()?.Trim(), "SystemExPath", false)</Assign>
+                                        <Assign>checkFolder(Config["SystemExPath"]?.ToString()?.Trim(), "SystemExPath", false)</Assign>
                                         <IsNoCodeAssign>false</IsNoCodeAssign>
                                     </Value>
                                 </SerializationItem>
@@ -1986,7 +1995,7 @@ checkURL = (url, paramName) =&gt;
                                     <Value xsi:type="MultipleAssignItem">
                                         <Variable>downloadPath</Variable>
                                         <IsNoCodeVariable>false</IsNoCodeVariable>
-                                        <Assign>F(Config["downloadPath"]?.ToString().Trim(), nameWebDownloads, true)</Assign>
+                                        <Assign>checkFolder(Config["downloadPath"]?.ToString().Trim(), nameWebDownloads, true)</Assign>
                                         <IsNoCodeAssign>false</IsNoCodeAssign>
                                     </Value>
                                 </SerializationItem>
@@ -1998,20 +2007,11 @@ checkURL = (url, paramName) =&gt;
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
-                            <Name>ComponentName</Name>
-                            <Value xsi:type="xsd:string">Множественное присвоение</Value>
-                        </SerializationItem>
-                        <SerializationItem>
-                            <IsListValue>false</IsListValue>
                             <Name>WaitBefore</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>WaitAfter</Name>
-                        </SerializationItem>
-                        <SerializationItem>
-                            <IsListValue>false</IsListValue>
-                            <Name>Annotation</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -2257,10 +2257,6 @@ checkURL = (url, paramName) =&gt;
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
-                            <Name>Annotation</Name>
-                        </SerializationItem>
-                        <SerializationItem>
-                            <IsListValue>false</IsListValue>
                             <Name>TextTag</Name>
                         </SerializationItem>
                         <SerializationItem>
@@ -2295,6 +2291,10 @@ checkURL = (url, paramName) =&gt;
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>WaitAfter</Name>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>Annotation</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -2510,10 +2510,6 @@ checkURL = (url, paramName) =&gt;
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
-                            <Name>Annotation</Name>
-                        </SerializationItem>
-                        <SerializationItem>
-                            <IsListValue>false</IsListValue>
                             <Name>TextTag</Name>
                         </SerializationItem>
                         <SerializationItem>
@@ -2547,6 +2543,10 @@ checkURL = (url, paramName) =&gt;
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>WaitAfter</Name>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>Annotation</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -3273,15 +3273,6 @@ checkURL = (url, paramName) =&gt;
                     <Properties>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
-                            <Name>ComponentName</Name>
-                            <Value xsi:type="xsd:string">Try-Catch</Value>
-                        </SerializationItem>
-                        <SerializationItem>
-                            <IsListValue>false</IsListValue>
-                            <Name>Annotation</Name>
-                        </SerializationItem>
-                        <SerializationItem>
-                            <IsListValue>false</IsListValue>
                             <Name>Exc</Name>
                             <Value xsi:type="xsd:string">exception</Value>
                         </SerializationItem>
@@ -3328,11 +3319,20 @@ checkURL = (url, paramName) =&gt;
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
+                            <Name>ComponentName</Name>
+                            <Value xsi:type="xsd:string">Try-Catch</Value>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
                             <Name>WaitBefore</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>WaitAfter</Name>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>Annotation</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -5313,11 +5313,6 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
-                    <Name>Annotation</Name>
-                    <Value xsi:type="xsd:string">Пояснение для проекта</Value>
-                </SerializationItem>
-                <SerializationItem>
-                    <IsListValue>false</IsListValue>
                     <Name>TextTag</Name>
                 </SerializationItem>
                 <SerializationItem>
@@ -5351,6 +5346,11 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>WaitAfter</Name>
+                </SerializationItem>
+                <SerializationItem>
+                    <IsListValue>false</IsListValue>
+                    <Name>Annotation</Name>
+                    <Value xsi:type="xsd:string">Пояснение для проекта</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -5509,11 +5509,6 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
-                    <Name>Annotation</Name>
-                    <Value xsi:type="xsd:string">Дополнительные пояснения</Value>
-                </SerializationItem>
-                <SerializationItem>
-                    <IsListValue>false</IsListValue>
                     <Name>TextTag</Name>
                 </SerializationItem>
                 <SerializationItem>
@@ -5547,6 +5542,11 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>WaitAfter</Name>
+                </SerializationItem>
+                <SerializationItem>
+                    <IsListValue>false</IsListValue>
+                    <Name>Annotation</Name>
+                    <Value xsi:type="xsd:string">Дополнительные пояснения</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -5695,11 +5695,6 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
-                    <Name>Annotation</Name>
-                    <Value xsi:type="xsd:string">Первый запуск</Value>
-                </SerializationItem>
-                <SerializationItem>
-                    <IsListValue>false</IsListValue>
                     <Name>TextTag</Name>
                 </SerializationItem>
                 <SerializationItem>
@@ -5733,6 +5728,11 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>WaitAfter</Name>
+                </SerializationItem>
+                <SerializationItem>
+                    <IsListValue>false</IsListValue>
+                    <Name>Annotation</Name>
+                    <Value xsi:type="xsd:string">Первый запуск</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -8530,11 +8530,12 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
         <ScriptVariable>
             <Name>nameDataPath</Name>
             <Group>ConfigData</Group>
+            <Comment>Имя папки с профилем</Comment>
             <DataTypeString>System.String</DataTypeString>
             <Direction>IN_OUT</Direction>
         </ScriptVariable>
         <ScriptVariable>
-            <Name>F</Name>
+            <Name>checkFolder</Name>
             <Group>ConfigData</Group>
             <Comment>Функция для проверки и создания путей</Comment>
             <DataTypeString>System.Func&lt;String,String,Boolean,String&gt;</DataTypeString>
