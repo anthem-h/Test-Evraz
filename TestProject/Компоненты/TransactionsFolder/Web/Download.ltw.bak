@@ -3,6 +3,7 @@
     <WorkflowType>1</WorkflowType>
     <IsTestCase>false</IsTestCase>
     <UseArgs>false</UseArgs>
+    <CsvDelimiter>44</CsvDelimiter>
     <ColumnsTableTestData />
     <RowsTableTestData />
     <ScriptType>CS</ScriptType>
@@ -137,9 +138,9 @@
                     <Value xsi:type="xsd:boolean">true</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -218,12 +219,12 @@
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
-                            <Name>ActivateTab</Name>
-                            <Value xsi:type="xsd:boolean">true</Value>
+                            <Name>BrowserTabIndex</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
-                            <Name>BrowserTabIndex</Name>
+                            <Name>ActivateTab</Name>
+                            <Value xsi:type="xsd:boolean">true</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -254,12 +255,17 @@
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
-                            <Name>TextTag</Name>
+                            <Name>OpenNew</Name>
+                            <Value xsi:type="xsd:boolean">false</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
+                            <Name>TextTag</Name>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>true</IsListValue>
                             <Name>Variables</Name>
-                            <Value xsi:type="ArrayOfScriptVariable" />
+                            <ListValue />
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -855,15 +861,6 @@
                             <AssemblyName>LTools.Workflow, Version=1.0.6.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
                             <Properties>
                                 <SerializationItem>
-                                    <IsListValue>false</IsListValue>
-                                    <Name>ComponentName</Name>
-                                    <Value xsi:type="xsd:string">Множественное присвоение</Value>
-                                </SerializationItem>
-                                <SerializationItem>
-                                    <IsListValue>false</IsListValue>
-                                    <Name>Annotation</Name>
-                                </SerializationItem>
-                                <SerializationItem>
                                     <IsListValue>true</IsListValue>
                                     <Name>Items</Name>
                                     <ListValue>
@@ -895,11 +892,20 @@
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
+                                    <Name>ComponentName</Name>
+                                    <Value xsi:type="xsd:string">Множественное присвоение</Value>
+                                </SerializationItem>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
                                     <Name>WaitBefore</Name>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
                                     <Name>WaitAfter</Name>
+                                </SerializationItem>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>Annotation</Name>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -1003,9 +1009,9 @@
                                     <Name>TextTag</Name>
                                 </SerializationItem>
                                 <SerializationItem>
-                                    <IsListValue>false</IsListValue>
+                                    <IsListValue>true</IsListValue>
                                     <Name>Variables</Name>
-                                    <Value xsi:type="ArrayOfScriptVariable" />
+                                    <ListValue />
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -1456,9 +1462,9 @@
                                     <Value xsi:type="xsd:string">!File.Exists(Path.Combine(downloadPath, nameFile + fileExtension))</Value>
                                 </SerializationItem>
                                 <SerializationItem>
-                                    <IsListValue>false</IsListValue>
+                                    <IsListValue>true</IsListValue>
                                     <Name>Variables</Name>
-                                    <Value xsi:type="ArrayOfScriptVariable" />
+                                    <ListValue />
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -1830,9 +1836,9 @@ if (!string.IsNullOrEmpty(matchedFile))
                                             <Value xsi:type="xsd:string">counter &gt;= 12</Value>
                                         </SerializationItem>
                                         <SerializationItem>
-                                            <IsListValue>false</IsListValue>
+                                            <IsListValue>true</IsListValue>
                                             <Name>Variables</Name>
-                                            <Value xsi:type="ArrayOfScriptVariable" />
+                                            <ListValue />
                                         </SerializationItem>
                                         <SerializationItem>
                                             <IsListValue>false</IsListValue>
@@ -2013,15 +2019,6 @@ if (!string.IsNullOrEmpty(matchedFile))
                             <AssemblyName>LTools.Workflow, Version=1.0.6.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
                             <Properties>
                                 <SerializationItem>
-                                    <IsListValue>false</IsListValue>
-                                    <Name>ComponentName</Name>
-                                    <Value xsi:type="xsd:string">Множественное присвоение</Value>
-                                </SerializationItem>
-                                <SerializationItem>
-                                    <IsListValue>false</IsListValue>
-                                    <Name>Annotation</Name>
-                                </SerializationItem>
-                                <SerializationItem>
                                     <IsListValue>true</IsListValue>
                                     <Name>Items</Name>
                                     <ListValue>
@@ -2053,11 +2050,20 @@ if (!string.IsNullOrEmpty(matchedFile))
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
+                                    <Name>ComponentName</Name>
+                                    <Value xsi:type="xsd:string">Множественное присвоение</Value>
+                                </SerializationItem>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
                                     <Name>WaitBefore</Name>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
                                     <Name>WaitAfter</Name>
+                                </SerializationItem>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>Annotation</Name>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -2215,9 +2221,9 @@ if (!string.IsNullOrEmpty(matchedFile))
                                     <Value xsi:type="xsd:string">!String.IsNullOrEmpty(matchedFolder)</Value>
                                 </SerializationItem>
                                 <SerializationItem>
-                                    <IsListValue>false</IsListValue>
+                                    <IsListValue>true</IsListValue>
                                     <Name>Variables</Name>
-                                    <Value xsi:type="ArrayOfScriptVariable" />
+                                    <ListValue />
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -2532,9 +2538,9 @@ System.IO.File.Delete(downloadFile);</Value>
                     <Value xsi:type="xsd:boolean">true</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -2655,9 +2661,9 @@ System.IO.File.Delete(downloadFile);</Value>
                             <Name>TextTag</Name>
                         </SerializationItem>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
+                            <IsListValue>true</IsListValue>
                             <Name>Variables</Name>
-                            <Value xsi:type="ArrayOfScriptVariable" />
+                            <ListValue />
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -3012,9 +3018,9 @@ File.WriteAllText(prefsPath, prefs.ToString());</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -3156,9 +3162,9 @@ File.WriteAllText(prefsPath, prefs.ToString());</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -3317,9 +3323,9 @@ File.WriteAllText(prefsPath, prefs.ToString());</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -3460,9 +3466,9 @@ File.WriteAllText(prefsPath, prefs.ToString());</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>

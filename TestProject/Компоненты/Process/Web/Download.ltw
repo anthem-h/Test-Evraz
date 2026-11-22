@@ -3,6 +3,7 @@
     <WorkflowType>1</WorkflowType>
     <IsTestCase>false</IsTestCase>
     <UseArgs>false</UseArgs>
+    <CsvDelimiter>44</CsvDelimiter>
     <ColumnsTableTestData />
     <RowsTableTestData />
     <ScriptType>CS</ScriptType>
@@ -111,6 +112,10 @@
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
+                    <Name>Annotation</Name>
+                </SerializationItem>
+                <SerializationItem>
+                    <IsListValue>false</IsListValue>
                     <Name>TextTag</Name>
                 </SerializationItem>
                 <SerializationItem>
@@ -133,9 +138,9 @@
                     <Value xsi:type="xsd:boolean">true</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -144,10 +149,6 @@
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>WaitAfter</Name>
-                </SerializationItem>
-                <SerializationItem>
-                    <IsListValue>false</IsListValue>
-                    <Name>Annotation</Name>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -218,12 +219,12 @@
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
-                            <Name>ActivateTab</Name>
-                            <Value xsi:type="xsd:boolean">true</Value>
+                            <Name>BrowserTabIndex</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
-                            <Name>BrowserTabIndex</Name>
+                            <Name>ActivateTab</Name>
+                            <Value xsi:type="xsd:boolean">true</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -254,12 +255,17 @@
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
-                            <Name>TextTag</Name>
+                            <Name>OpenNew</Name>
+                            <Value xsi:type="xsd:boolean">false</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
+                            <Name>TextTag</Name>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>true</IsListValue>
                             <Name>Variables</Name>
-                            <Value xsi:type="ArrayOfScriptVariable" />
+                            <ListValue />
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -1003,9 +1009,9 @@
                                     <Name>TextTag</Name>
                                 </SerializationItem>
                                 <SerializationItem>
-                                    <IsListValue>false</IsListValue>
+                                    <IsListValue>true</IsListValue>
                                     <Name>Variables</Name>
-                                    <Value xsi:type="ArrayOfScriptVariable" />
+                                    <ListValue />
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -1456,9 +1462,9 @@
                                     <Value xsi:type="xsd:string">!File.Exists(Path.Combine(downloadPath, nameFile + fileExtension))</Value>
                                 </SerializationItem>
                                 <SerializationItem>
-                                    <IsListValue>false</IsListValue>
+                                    <IsListValue>true</IsListValue>
                                     <Name>Variables</Name>
-                                    <Value xsi:type="ArrayOfScriptVariable" />
+                                    <ListValue />
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -1830,9 +1836,9 @@ if (!string.IsNullOrEmpty(matchedFile))
                                             <Value xsi:type="xsd:string">counter &gt;= 12</Value>
                                         </SerializationItem>
                                         <SerializationItem>
-                                            <IsListValue>false</IsListValue>
+                                            <IsListValue>true</IsListValue>
                                             <Name>Variables</Name>
-                                            <Value xsi:type="ArrayOfScriptVariable" />
+                                            <ListValue />
                                         </SerializationItem>
                                         <SerializationItem>
                                             <IsListValue>false</IsListValue>
@@ -2215,9 +2221,9 @@ if (!string.IsNullOrEmpty(matchedFile))
                                     <Value xsi:type="xsd:string">!String.IsNullOrEmpty(matchedFolder)</Value>
                                 </SerializationItem>
                                 <SerializationItem>
-                                    <IsListValue>false</IsListValue>
+                                    <IsListValue>true</IsListValue>
                                     <Name>Variables</Name>
-                                    <Value xsi:type="ArrayOfScriptVariable" />
+                                    <ListValue />
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -2506,6 +2512,10 @@ System.IO.File.Delete(downloadFile);</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
+                    <Name>Annotation</Name>
+                </SerializationItem>
+                <SerializationItem>
+                    <IsListValue>false</IsListValue>
                     <Name>TextTag</Name>
                 </SerializationItem>
                 <SerializationItem>
@@ -2528,9 +2538,9 @@ System.IO.File.Delete(downloadFile);</Value>
                     <Value xsi:type="xsd:boolean">true</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -2539,10 +2549,6 @@ System.IO.File.Delete(downloadFile);</Value>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>WaitAfter</Name>
-                </SerializationItem>
-                <SerializationItem>
-                    <IsListValue>false</IsListValue>
-                    <Name>Annotation</Name>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -2630,7 +2636,7 @@ System.IO.File.Delete(downloadFile);</Value>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>LaunchArgs</Name>
-                            <Value xsi:type="xsd:string">$"--start-maximized --user-data-dir=\"{userDataPath}\" --no-default-browser-check --disable-infobars --disable-notifications --no-first-run --load-extension=\"{pathExtension}\""</Value>
+                            <Value xsi:type="xsd:string">$"--start-maximized --no-default-browser-check --disable-infobars --disable-notifications --no-first-run"</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -2655,9 +2661,9 @@ System.IO.File.Delete(downloadFile);</Value>
                             <Name>TextTag</Name>
                         </SerializationItem>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
+                            <IsListValue>true</IsListValue>
                             <Name>Variables</Name>
-                            <Value xsi:type="ArrayOfScriptVariable" />
+                            <ListValue />
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -2675,7 +2681,7 @@ System.IO.File.Delete(downloadFile);</Value>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>Annotation</Name>
-                            <Value xsi:type="xsd:string">Создается браузер из настроек конфиг-файла</Value>
+                            <Value xsi:type="xsd:string">Открывается браузер с настройкой JSON</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -2737,17 +2743,17 @@ System.IO.File.Delete(downloadFile);</Value>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
                                     <Name>Script</Name>
-                                    <Value xsi:type="xsd:string">// 1. Папка Default внутри кастомного профиля робота
-string profileDefaultDir = Path.Combine(userDataPath, "Default");
-string prefsPath = Path.Combine(profileDefaultDir, "Preferences");
+                                    <Value xsi:type="xsd:string">// 1. Папка Default
+string chromeDefaultDir = Path.Combine(chromeUserDataPath, "Default");
+string prefsPath = Path.Combine(chromeDefaultDir, "Preferences");
 
-// Если профиль совсем новый, создаем папку Default, чтобы было куда положить Preferences
-if (!Directory.Exists(profileDefaultDir))
+// Создаем папку Default, чтобы было куда положить Preferences
+if (!Directory.Exists(chromeDefaultDir))
 {
-    Directory.CreateDirectory(profileDefaultDir);
+    Directory.CreateDirectory(chromeDefaultDir);
 }
 
-// 2. Считываем JSON файла изолированного профиля (если есть) или берем пустой
+// 2. Считываем JSON файла (если есть) или берем пустой
 string json = File.Exists(prefsPath) ? File.ReadAllText(prefsPath) : "{}";
 JObject prefs = JObject.Parse(json);
 
@@ -2757,10 +2763,10 @@ if (prefs["download"] == null)
     prefs["download"] = new JObject();
 }
 
-// 4. Включаем показ диалогового окна "Сохранить как..." ТОЛЬКО для этого профиля
+// 4. Включаем показ диалогового окна "Сохранить как..."
 prefs["download"]["prompt_for_download"] = true;
 
-// 5. Сохраняем изменения обратно в файл профиля робота
+// 5. Сохраняем изменения обратно в файл
 File.WriteAllText(prefsPath, prefs.ToString());</Value>
                                 </SerializationItem>
                                 <SerializationItem>
@@ -2792,7 +2798,7 @@ File.WriteAllText(prefsPath, prefs.ToString());</Value>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
                                     <Name>Annotation</Name>
-                                    <Value xsi:type="xsd:string">Начальная работа с профилем браузера: изменение JSON профиля, чтобы были необходимые настройки (чекбокс "сохранить как")</Value>
+                                    <Value xsi:type="xsd:string">Начальная работа с браузером: изменение JSON, чтобы были необходимые изменения (настройка "сохранить как")</Value>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -3012,9 +3018,9 @@ File.WriteAllText(prefsPath, prefs.ToString());</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -3156,9 +3162,9 @@ File.WriteAllText(prefsPath, prefs.ToString());</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -3317,9 +3323,9 @@ File.WriteAllText(prefsPath, prefs.ToString());</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -3460,9 +3466,9 @@ File.WriteAllText(prefsPath, prefs.ToString());</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -3593,20 +3599,6 @@ File.WriteAllText(prefsPath, prefs.ToString());</Value>
             <Direction>IN</Direction>
         </ScriptVariable>
         <ScriptVariable>
-            <Name>pathExtension</Name>
-            <Group />
-            <Comment>Путь до папки с расширением</Comment>
-            <DataTypeString>String</DataTypeString>
-            <Direction>IN</Direction>
-        </ScriptVariable>
-        <ScriptVariable>
-            <Name>userDataPath</Name>
-            <Group />
-            <Comment>Путь до каталога с профилем</Comment>
-            <DataTypeString>String</DataTypeString>
-            <Direction>IN</Direction>
-        </ScriptVariable>
-        <ScriptVariable>
             <Name>webVar</Name>
             <Group />
             <Comment>Переменная браузера</Comment>
@@ -3616,7 +3608,13 @@ File.WriteAllText(prefsPath, prefs.ToString());</Value>
         <ScriptVariable>
             <Name>downloadPath</Name>
             <Group />
-            <Comment>Путь загрузок профиля</Comment>
+            <Comment>Путь загрузок</Comment>
+            <DataTypeString>String</DataTypeString>
+            <Direction>IN</Direction>
+        </ScriptVariable>
+        <ScriptVariable>
+            <Name>chromeUserDataPath</Name>
+            <Group />
             <DataTypeString>String</DataTypeString>
             <Direction>IN</Direction>
         </ScriptVariable>

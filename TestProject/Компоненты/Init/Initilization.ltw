@@ -3,6 +3,7 @@
     <WorkflowType>0</WorkflowType>
     <IsTestCase>false</IsTestCase>
     <UseArgs>false</UseArgs>
+    <CsvDelimiter>44</CsvDelimiter>
     <ColumnsTableTestData />
     <RowsTableTestData />
     <ScriptType>CS</ScriptType>
@@ -12,21 +13,17 @@
         <Properties>
             <SerializationItem>
                 <IsListValue>false</IsListValue>
-                <Name>ComponentName</Name>
-                <Value xsi:type="xsd:string">Initilization</Value>
-            </SerializationItem>
-            <SerializationItem>
-                <IsListValue>false</IsListValue>
-                <Name>Annotation</Name>
-            </SerializationItem>
-            <SerializationItem>
-                <IsListValue>false</IsListValue>
                 <Name>TextTag</Name>
             </SerializationItem>
             <SerializationItem>
-                <IsListValue>false</IsListValue>
+                <IsListValue>true</IsListValue>
                 <Name>Variables</Name>
-                <Value xsi:type="ArrayOfScriptVariable" />
+                <ListValue />
+            </SerializationItem>
+            <SerializationItem>
+                <IsListValue>false</IsListValue>
+                <Name>ComponentName</Name>
+                <Value xsi:type="xsd:string">Initilization</Value>
             </SerializationItem>
             <SerializationItem>
                 <IsListValue>false</IsListValue>
@@ -35,6 +32,10 @@
             <SerializationItem>
                 <IsListValue>false</IsListValue>
                 <Name>WaitAfter</Name>
+            </SerializationItem>
+            <SerializationItem>
+                <IsListValue>false</IsListValue>
+                <Name>Annotation</Name>
             </SerializationItem>
             <SerializationItem>
                 <IsListValue>false</IsListValue>
@@ -134,9 +135,9 @@
                         <Name>Mapping</Name>
                     </SerializationItem>
                     <SerializationItem>
-                        <IsListValue>false</IsListValue>
+                        <IsListValue>true</IsListValue>
                         <Name>Arguments</Name>
-                        <Value xsi:type="ArrayOfScriptVariable" />
+                        <ListValue />
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
@@ -361,31 +362,43 @@
                         <Name>Mapping</Name>
                     </SerializationItem>
                     <SerializationItem>
-                        <IsListValue>false</IsListValue>
+                        <IsListValue>true</IsListValue>
                         <Name>Arguments</Name>
-                        <Value xsi:type="ArrayOfScriptVariable">
-                            <ScriptVariable>
-                                <Name>in_ConfigFile</Name>
-                                <Group />
-                                <DefaultValue xsi:type="xsd:string">pathConfig</DefaultValue>
-                                <DataTypeString>System.String</DataTypeString>
-                                <Direction>IN</Direction>
-                            </ScriptVariable>
-                            <ScriptVariable>
-                                <Name>in_ConfigSheets</Name>
-                                <Group />
-                                <DefaultValue xsi:type="xsd:string">sheetsConfig</DefaultValue>
-                                <DataTypeString>System.String[]</DataTypeString>
-                                <Direction>IN</Direction>
-                            </ScriptVariable>
-                            <ScriptVariable>
-                                <Name>out_Config</Name>
-                                <Group />
-                                <DefaultValue xsi:type="xsd:string">Config</DefaultValue>
-                                <DataTypeString>System.Collections.Generic.Dictionary&lt;System.String, System.Object&gt;</DataTypeString>
-                                <Direction>OUT</Direction>
-                            </ScriptVariable>
-                        </Value>
+                        <ListValue>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>Arguments</Name>
+                                <Value xsi:type="ScriptVariable">
+                                    <Name>in_ConfigFile</Name>
+                                    <Group />
+                                    <DefaultValue xsi:type="xsd:string">pathConfig</DefaultValue>
+                                    <DataTypeString>System.String</DataTypeString>
+                                    <Direction>IN</Direction>
+                                </Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>Arguments</Name>
+                                <Value xsi:type="ScriptVariable">
+                                    <Name>in_ConfigSheets</Name>
+                                    <Group />
+                                    <DefaultValue xsi:type="xsd:string">sheetsConfig</DefaultValue>
+                                    <DataTypeString>System.String[]</DataTypeString>
+                                    <Direction>IN</Direction>
+                                </Value>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>Arguments</Name>
+                                <Value xsi:type="ScriptVariable">
+                                    <Name>out_Config</Name>
+                                    <Group />
+                                    <DefaultValue xsi:type="xsd:string">Config</DefaultValue>
+                                    <DataTypeString>System.Collections.Generic.Dictionary&lt;System.String, System.Object&gt;</DataTypeString>
+                                    <Direction>OUT</Direction>
+                                </Value>
+                            </SerializationItem>
+                        </ListValue>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>

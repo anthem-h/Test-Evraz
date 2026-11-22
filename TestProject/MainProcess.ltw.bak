@@ -3,6 +3,7 @@
     <WorkflowType>1</WorkflowType>
     <IsTestCase>false</IsTestCase>
     <UseArgs>false</UseArgs>
+    <CsvDelimiter>44</CsvDelimiter>
     <ColumnsTableTestData />
     <RowsTableTestData />
     <ScriptType>CS</ScriptType>
@@ -447,9 +448,9 @@
                     <Value xsi:type="xsd:boolean">true</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -725,9 +726,9 @@
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -835,9 +836,9 @@
                             <Name>Mapping</Name>
                         </SerializationItem>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
+                            <IsListValue>true</IsListValue>
                             <Name>Arguments</Name>
-                            <Value xsi:type="ArrayOfScriptVariable" />
+                            <ListValue />
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -950,9 +951,9 @@
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -1060,31 +1061,43 @@
                             <Name>Mapping</Name>
                         </SerializationItem>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
+                            <IsListValue>true</IsListValue>
                             <Name>Arguments</Name>
-                            <Value xsi:type="ArrayOfScriptVariable">
-                                <ScriptVariable>
-                                    <Name>guideMine</Name>
-                                    <Group />
-                                    <DefaultValue xsi:type="xsd:string">guideMine</DefaultValue>
-                                    <DataTypeString>System.Collections.Generic.Dictionary&lt;System.String, System.String&gt;</DataTypeString>
-                                    <Direction>IN</Direction>
-                                </ScriptVariable>
-                                <ScriptVariable>
-                                    <Name>transactionEl</Name>
-                                    <Group />
-                                    <DefaultValue xsi:type="xsd:string">transactionEl</DefaultValue>
-                                    <DataTypeString>System.Collections.Generic.KeyValuePair&lt;System.String, System.String&gt;</DataTypeString>
-                                    <Direction>OUT</Direction>
-                                </ScriptVariable>
-                                <ScriptVariable>
-                                    <Name>transactionData</Name>
-                                    <Group />
-                                    <DefaultValue xsi:type="xsd:string">transactionData</DefaultValue>
-                                    <DataTypeString>System.Collections.Generic.Dictionary&lt;System.String, System.String&gt;</DataTypeString>
-                                    <Direction>IN_OUT</Direction>
-                                </ScriptVariable>
-                            </Value>
+                            <ListValue>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>Arguments</Name>
+                                    <Value xsi:type="ScriptVariable">
+                                        <Name>guideMine</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">guideMine</DefaultValue>
+                                        <DataTypeString>System.Collections.Generic.Dictionary&lt;System.String, System.String&gt;</DataTypeString>
+                                        <Direction>IN</Direction>
+                                    </Value>
+                                </SerializationItem>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>Arguments</Name>
+                                    <Value xsi:type="ScriptVariable">
+                                        <Name>transactionEl</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">transactionEl</DefaultValue>
+                                        <DataTypeString>System.Collections.Generic.KeyValuePair&lt;System.String, System.String&gt;</DataTypeString>
+                                        <Direction>OUT</Direction>
+                                    </Value>
+                                </SerializationItem>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>Arguments</Name>
+                                    <Value xsi:type="ScriptVariable">
+                                        <Name>transactionData</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">transactionData</DefaultValue>
+                                        <DataTypeString>System.Collections.Generic.Dictionary&lt;System.String, System.String&gt;</DataTypeString>
+                                        <Direction>IN_OUT</Direction>
+                                    </Value>
+                                </SerializationItem>
+                            </ListValue>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -1196,9 +1209,9 @@
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -1306,44 +1319,64 @@
                             <Name>Mapping</Name>
                         </SerializationItem>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
+                            <IsListValue>true</IsListValue>
                             <Name>Arguments</Name>
-                            <Value xsi:type="ArrayOfScriptVariable">
-                                <ScriptVariable>
-                                    <Name>exception</Name>
-                                    <Group />
-                                    <DefaultValue xsi:type="xsd:string">exception</DefaultValue>
-                                    <DataTypeString>LTools.Common.Model.ExecutionExceptionInfo</DataTypeString>
-                                    <Direction>IN_OUT</Direction>
-                                </ScriptVariable>
-                                <ScriptVariable>
-                                    <Name>screenshotFolder</Name>
-                                    <Group />
-                                    <DefaultValue xsi:type="xsd:string">screenshotFolder</DefaultValue>
-                                    <DataTypeString>System.String</DataTypeString>
-                                    <Direction>IN</Direction>
-                                </ScriptVariable>
-                                <ScriptVariable>
-                                    <Name>systemFolder</Name>
-                                    <Group />
-                                    <DefaultValue xsi:type="xsd:string">systemExPath</DefaultValue>
-                                    <DataTypeString>System.String</DataTypeString>
-                                    <Direction>IN</Direction>
-                                </ScriptVariable>
-                                <ScriptVariable>
-                                    <Name>businessFolder</Name>
-                                    <Group />
-                                    <DefaultValue xsi:type="xsd:string">businessExPath</DefaultValue>
-                                    <DataTypeString>System.String</DataTypeString>
-                                    <Direction>IN</Direction>
-                                </ScriptVariable>
-                                <ScriptVariable>
-                                    <Name>flagEnd</Name>
-                                    <Group />
-                                    <DataTypeString>System.Boolean</DataTypeString>
-                                    <Direction>OUT</Direction>
-                                </ScriptVariable>
-                            </Value>
+                            <ListValue>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>Arguments</Name>
+                                    <Value xsi:type="ScriptVariable">
+                                        <Name>exception</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">exception</DefaultValue>
+                                        <DataTypeString>LTools.Common.Model.ExecutionExceptionInfo</DataTypeString>
+                                        <Direction>IN_OUT</Direction>
+                                    </Value>
+                                </SerializationItem>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>Arguments</Name>
+                                    <Value xsi:type="ScriptVariable">
+                                        <Name>screenshotFolder</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">screenshotFolder</DefaultValue>
+                                        <DataTypeString>System.String</DataTypeString>
+                                        <Direction>IN</Direction>
+                                    </Value>
+                                </SerializationItem>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>Arguments</Name>
+                                    <Value xsi:type="ScriptVariable">
+                                        <Name>systemFolder</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">systemExPath</DefaultValue>
+                                        <DataTypeString>System.String</DataTypeString>
+                                        <Direction>IN</Direction>
+                                    </Value>
+                                </SerializationItem>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>Arguments</Name>
+                                    <Value xsi:type="ScriptVariable">
+                                        <Name>businessFolder</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">businessExPath</DefaultValue>
+                                        <DataTypeString>System.String</DataTypeString>
+                                        <Direction>IN</Direction>
+                                    </Value>
+                                </SerializationItem>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>Arguments</Name>
+                                    <Value xsi:type="ScriptVariable">
+                                        <Name>flagEnd</Name>
+                                        <Group />
+                                        <DataTypeString>System.Boolean</DataTypeString>
+                                        <Direction>OUT</Direction>
+                                    </Value>
+                                </SerializationItem>
+                            </ListValue>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -1456,9 +1489,9 @@
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -1566,17 +1599,21 @@
                             <Name>Mapping</Name>
                         </SerializationItem>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
+                            <IsListValue>true</IsListValue>
                             <Name>Arguments</Name>
-                            <Value xsi:type="ArrayOfScriptVariable">
-                                <ScriptVariable>
-                                    <Name>Config</Name>
-                                    <Group />
-                                    <DefaultValue xsi:type="xsd:string">Config</DefaultValue>
-                                    <DataTypeString>System.Collections.Generic.Dictionary&lt;System.String, System.Object&gt;</DataTypeString>
-                                    <Direction>OUT</Direction>
-                                </ScriptVariable>
-                            </Value>
+                            <ListValue>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>Arguments</Name>
+                                    <Value xsi:type="ScriptVariable">
+                                        <Name>Config</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">Config</DefaultValue>
+                                        <DataTypeString>System.Collections.Generic.Dictionary&lt;System.String, System.Object&gt;</DataTypeString>
+                                        <Direction>OUT</Direction>
+                                    </Value>
+                                </SerializationItem>
+                            </ListValue>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -1874,15 +1911,6 @@ checkURL = (url, paramName) =&gt;
                     <AssemblyName>LTools.Workflow, Version=1.0.6.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
                     <Properties>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
-                            <Name>ComponentName</Name>
-                            <Value xsi:type="xsd:string">Множественное присвоение</Value>
-                        </SerializationItem>
-                        <SerializationItem>
-                            <IsListValue>false</IsListValue>
-                            <Name>Annotation</Name>
-                        </SerializationItem>
-                        <SerializationItem>
                             <IsListValue>true</IsListValue>
                             <Name>Items</Name>
                             <ListValue>
@@ -2007,11 +2035,20 @@ checkURL = (url, paramName) =&gt;
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
+                            <Name>ComponentName</Name>
+                            <Value xsi:type="xsd:string">Множественное присвоение</Value>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
                             <Name>WaitBefore</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>WaitAfter</Name>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>Annotation</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -2284,9 +2321,9 @@ checkURL = (url, paramName) =&gt;
                             <Value xsi:type="xsd:boolean">true</Value>
                         </SerializationItem>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
+                            <IsListValue>true</IsListValue>
                             <Name>Variables</Name>
-                            <Value xsi:type="ArrayOfScriptVariable" />
+                            <ListValue />
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -2394,38 +2431,54 @@ checkURL = (url, paramName) =&gt;
                                     <Name>Mapping</Name>
                                 </SerializationItem>
                                 <SerializationItem>
-                                    <IsListValue>false</IsListValue>
+                                    <IsListValue>true</IsListValue>
                                     <Name>Arguments</Name>
-                                    <Value xsi:type="ArrayOfScriptVariable">
-                                        <ScriptVariable>
-                                            <Name>guideMark</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">guideMark</DefaultValue>
-                                            <DataTypeString>System.Collections.Generic.List&lt;System.String&gt;</DataTypeString>
-                                            <Direction>IN</Direction>
-                                        </ScriptVariable>
-                                        <ScriptVariable>
-                                            <Name>mainFolder</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">mainFolder</DefaultValue>
-                                            <DataTypeString>System.String</DataTypeString>
-                                            <Direction>IN</Direction>
-                                        </ScriptVariable>
-                                        <ScriptVariable>
-                                            <Name>mine</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">transactionEl.Key</DefaultValue>
-                                            <DataTypeString>System.String</DataTypeString>
-                                            <Direction>IN</Direction>
-                                        </ScriptVariable>
-                                        <ScriptVariable>
-                                            <Name>dtSummary</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">dtSummary</DefaultValue>
-                                            <DataTypeString>System.Data.DataTable</DataTypeString>
-                                            <Direction>IN_OUT</Direction>
-                                        </ScriptVariable>
-                                    </Value>
+                                    <ListValue>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>guideMark</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">guideMark</DefaultValue>
+                                                <DataTypeString>System.Collections.Generic.List&lt;System.String&gt;</DataTypeString>
+                                                <Direction>IN</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>mainFolder</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">mainFolder</DefaultValue>
+                                                <DataTypeString>System.String</DataTypeString>
+                                                <Direction>IN</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>mine</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">transactionEl.Key</DefaultValue>
+                                                <DataTypeString>System.String</DataTypeString>
+                                                <Direction>IN</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>dtSummary</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">dtSummary</DefaultValue>
+                                                <DataTypeString>System.Data.DataTable</DataTypeString>
+                                                <Direction>IN_OUT</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                    </ListValue>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -2536,9 +2589,9 @@ checkURL = (url, paramName) =&gt;
                             <Value xsi:type="xsd:boolean">true</Value>
                         </SerializationItem>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
+                            <IsListValue>true</IsListValue>
                             <Name>Variables</Name>
-                            <Value xsi:type="ArrayOfScriptVariable" />
+                            <ListValue />
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -2646,38 +2699,54 @@ checkURL = (url, paramName) =&gt;
                                     <Name>Mapping</Name>
                                 </SerializationItem>
                                 <SerializationItem>
-                                    <IsListValue>false</IsListValue>
+                                    <IsListValue>true</IsListValue>
                                     <Name>Arguments</Name>
-                                    <Value xsi:type="ArrayOfScriptVariable">
-                                        <ScriptVariable>
-                                            <Name>exception</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">exception</DefaultValue>
-                                            <DataTypeString>LTools.Common.Model.ExecutionExceptionInfo</DataTypeString>
-                                            <Direction>IN_OUT</Direction>
-                                        </ScriptVariable>
-                                        <ScriptVariable>
-                                            <Name>systemFolder</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">systemExPath</DefaultValue>
-                                            <DataTypeString>System.String</DataTypeString>
-                                            <Direction>IN</Direction>
-                                        </ScriptVariable>
-                                        <ScriptVariable>
-                                            <Name>businessFolder</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">businessExPath</DefaultValue>
-                                            <DataTypeString>System.String</DataTypeString>
-                                            <Direction>IN</Direction>
-                                        </ScriptVariable>
-                                        <ScriptVariable>
-                                            <Name>flagEnd</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">flagEnd</DefaultValue>
-                                            <DataTypeString>System.Boolean</DataTypeString>
-                                            <Direction>IN_OUT</Direction>
-                                        </ScriptVariable>
-                                    </Value>
+                                    <ListValue>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>exception</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">exception</DefaultValue>
+                                                <DataTypeString>LTools.Common.Model.ExecutionExceptionInfo</DataTypeString>
+                                                <Direction>IN_OUT</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>systemFolder</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">systemExPath</DefaultValue>
+                                                <DataTypeString>System.String</DataTypeString>
+                                                <Direction>IN</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>businessFolder</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">businessExPath</DefaultValue>
+                                                <DataTypeString>System.String</DataTypeString>
+                                                <Direction>IN</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>flagEnd</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">flagEnd</DefaultValue>
+                                                <DataTypeString>System.Boolean</DataTypeString>
+                                                <Direction>IN_OUT</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                    </ListValue>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -2824,9 +2893,9 @@ checkURL = (url, paramName) =&gt;
                             <Value xsi:type="xsd:boolean">false</Value>
                         </SerializationItem>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
+                            <IsListValue>true</IsListValue>
                             <Name>Variables</Name>
-                            <Value xsi:type="ArrayOfScriptVariable" />
+                            <ListValue />
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -3093,9 +3162,9 @@ checkURL = (url, paramName) =&gt;
                             <Value xsi:type="xsd:boolean">false</Value>
                         </SerializationItem>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
+                            <IsListValue>true</IsListValue>
                             <Name>Variables</Name>
-                            <Value xsi:type="ArrayOfScriptVariable" />
+                            <ListValue />
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -3206,9 +3275,9 @@ checkURL = (url, paramName) =&gt;
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -3282,9 +3351,9 @@ checkURL = (url, paramName) =&gt;
                             <Value xsi:type="xsd:boolean">false</Value>
                         </SerializationItem>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
+                            <IsListValue>true</IsListValue>
                             <Name>Variables</Name>
-                            <Value xsi:type="ArrayOfScriptVariable" />
+                            <ListValue />
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>true</IsListValue>
@@ -3432,59 +3501,87 @@ checkURL = (url, paramName) =&gt;
                                     <Name>Mapping</Name>
                                 </SerializationItem>
                                 <SerializationItem>
-                                    <IsListValue>false</IsListValue>
+                                    <IsListValue>true</IsListValue>
                                     <Name>Arguments</Name>
-                                    <Value xsi:type="ArrayOfScriptVariable">
-                                        <ScriptVariable>
-                                            <Name>mainFolder</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">mainFolder</DefaultValue>
-                                            <DataTypeString>System.String</DataTypeString>
-                                            <Direction>IN</Direction>
-                                        </ScriptVariable>
-                                        <ScriptVariable>
-                                            <Name>adressSite</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">adressSite</DefaultValue>
-                                            <DataTypeString>System.String</DataTypeString>
-                                            <Direction>IN</Direction>
-                                        </ScriptVariable>
-                                        <ScriptVariable>
-                                            <Name>mine</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">transactionEl</DefaultValue>
-                                            <DataTypeString>System.Collections.Generic.KeyValuePair&lt;System.String, System.String&gt;</DataTypeString>
-                                            <Direction>IN</Direction>
-                                        </ScriptVariable>
-                                        <ScriptVariable>
-                                            <Name>pathExtension</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">pathExtension</DefaultValue>
-                                            <DataTypeString>System.String</DataTypeString>
-                                            <Direction>IN</Direction>
-                                        </ScriptVariable>
-                                        <ScriptVariable>
-                                            <Name>userDataPath</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">userDataPath</DefaultValue>
-                                            <DataTypeString>System.String</DataTypeString>
-                                            <Direction>IN</Direction>
-                                        </ScriptVariable>
-                                        <ScriptVariable>
-                                            <Name>webVar</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">webVar</DefaultValue>
-                                            <DataTypeString>LTools.WebBrowser.BrowserInst</DataTypeString>
-                                            <Direction>IN_OUT</Direction>
-                                        </ScriptVariable>
-                                        <ScriptVariable>
-                                            <Name>downloadPath</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">downloadPath</DefaultValue>
-                                            <DataTypeString>System.String</DataTypeString>
-                                            <Direction>IN</Direction>
-                                        </ScriptVariable>
-                                    </Value>
+                                    <ListValue>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>mainFolder</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">mainFolder</DefaultValue>
+                                                <DataTypeString>System.String</DataTypeString>
+                                                <Direction>IN</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>adressSite</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">adressSite</DefaultValue>
+                                                <DataTypeString>System.String</DataTypeString>
+                                                <Direction>IN</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>mine</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">transactionEl</DefaultValue>
+                                                <DataTypeString>System.Collections.Generic.KeyValuePair&lt;System.String, System.String&gt;</DataTypeString>
+                                                <Direction>IN</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>pathExtension</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">pathExtension</DefaultValue>
+                                                <DataTypeString>System.String</DataTypeString>
+                                                <Direction>IN</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>userDataPath</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">userDataPath</DefaultValue>
+                                                <DataTypeString>System.String</DataTypeString>
+                                                <Direction>IN</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>webVar</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">webVar</DefaultValue>
+                                                <DataTypeString>LTools.WebBrowser.BrowserInst</DataTypeString>
+                                                <Direction>IN_OUT</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>downloadPath</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">downloadPath</DefaultValue>
+                                                <DataTypeString>System.String</DataTypeString>
+                                                <Direction>IN</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                    </ListValue>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -3606,45 +3703,65 @@ checkURL = (url, paramName) =&gt;
                                     <Name>Mapping</Name>
                                 </SerializationItem>
                                 <SerializationItem>
-                                    <IsListValue>false</IsListValue>
+                                    <IsListValue>true</IsListValue>
                                     <Name>Arguments</Name>
-                                    <Value xsi:type="ArrayOfScriptVariable">
-                                        <ScriptVariable>
-                                            <Name>exception</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">exception</DefaultValue>
-                                            <DataTypeString>LTools.Common.Model.ExecutionExceptionInfo</DataTypeString>
-                                            <Direction>IN_OUT</Direction>
-                                        </ScriptVariable>
-                                        <ScriptVariable>
-                                            <Name>screenshotFolder</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">screenshotFolder</DefaultValue>
-                                            <DataTypeString>System.String</DataTypeString>
-                                            <Direction>IN</Direction>
-                                        </ScriptVariable>
-                                        <ScriptVariable>
-                                            <Name>systemFolder</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">systemExPath</DefaultValue>
-                                            <DataTypeString>System.String</DataTypeString>
-                                            <Direction>IN</Direction>
-                                        </ScriptVariable>
-                                        <ScriptVariable>
-                                            <Name>businessFolder</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">businessExPath</DefaultValue>
-                                            <DataTypeString>System.String</DataTypeString>
-                                            <Direction>IN</Direction>
-                                        </ScriptVariable>
-                                        <ScriptVariable>
-                                            <Name>flagEnd</Name>
-                                            <Group />
-                                            <DefaultValue xsi:type="xsd:string">flagEnd</DefaultValue>
-                                            <DataTypeString>System.Boolean</DataTypeString>
-                                            <Direction>IN_OUT</Direction>
-                                        </ScriptVariable>
-                                    </Value>
+                                    <ListValue>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>exception</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">exception</DefaultValue>
+                                                <DataTypeString>LTools.Common.Model.ExecutionExceptionInfo</DataTypeString>
+                                                <Direction>IN_OUT</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>screenshotFolder</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">screenshotFolder</DefaultValue>
+                                                <DataTypeString>System.String</DataTypeString>
+                                                <Direction>IN</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>systemFolder</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">systemExPath</DefaultValue>
+                                                <DataTypeString>System.String</DataTypeString>
+                                                <Direction>IN</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>businessFolder</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">businessExPath</DefaultValue>
+                                                <DataTypeString>System.String</DataTypeString>
+                                                <Direction>IN</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                        <SerializationItem>
+                                            <IsListValue>false</IsListValue>
+                                            <Name>Arguments</Name>
+                                            <Value xsi:type="ScriptVariable">
+                                                <Name>flagEnd</Name>
+                                                <Group />
+                                                <DefaultValue xsi:type="xsd:string">flagEnd</DefaultValue>
+                                                <DataTypeString>System.Boolean</DataTypeString>
+                                                <Direction>IN_OUT</Direction>
+                                            </Value>
+                                        </SerializationItem>
+                                    </ListValue>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -3762,9 +3879,9 @@ checkURL = (url, paramName) =&gt;
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -3857,6 +3974,14 @@ checkURL = (url, paramName) =&gt;
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
+                            <Name>WritePassword</Name>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>WritePasswordEncrypted</Name>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
                             <Name>Bytes</Name>
                         </SerializationItem>
                         <SerializationItem>
@@ -3891,12 +4016,17 @@ checkURL = (url, paramName) =&gt;
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
-                            <Name>TextTag</Name>
+                            <Name>IsCloseExcel</Name>
+                            <Value xsi:type="xsd:boolean">true</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
+                            <Name>TextTag</Name>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>true</IsListValue>
                             <Name>Variables</Name>
-                            <Value xsi:type="ArrayOfScriptVariable" />
+                            <ListValue />
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -4023,6 +4153,11 @@ checkURL = (url, paramName) =&gt;
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
                                     <Name>AsText</Name>
+                                    <Value xsi:type="xsd:boolean">false</Value>
+                                </SerializationItem>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>AsTextCSV</Name>
                                     <Value xsi:type="xsd:boolean">false</Value>
                                 </SerializationItem>
                                 <SerializationItem>
@@ -4275,9 +4410,9 @@ using (var workbook = new ClosedXML.Excel.XLWorkbook(filePath))
                             <Value xsi:type="xsd:string">!String.IsNullOrEmpty(downloadPath)</Value>
                         </SerializationItem>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
+                            <IsListValue>true</IsListValue>
                             <Name>Variables</Name>
-                            <Value xsi:type="ArrayOfScriptVariable" />
+                            <ListValue />
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -4589,9 +4724,9 @@ using (var workbook = new ClosedXML.Excel.XLWorkbook(filePath))
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -4699,31 +4834,43 @@ using (var workbook = new ClosedXML.Excel.XLWorkbook(filePath))
                             <Name>Mapping</Name>
                         </SerializationItem>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
+                            <IsListValue>true</IsListValue>
                             <Name>Arguments</Name>
-                            <Value xsi:type="ArrayOfScriptVariable">
-                                <ScriptVariable>
-                                    <Name>guideMine</Name>
-                                    <Group />
-                                    <DefaultValue xsi:type="xsd:string">guideMine</DefaultValue>
-                                    <DataTypeString>System.Collections.Generic.Dictionary&lt;System.String, System.String&gt;</DataTypeString>
-                                    <Direction>OUT</Direction>
-                                </ScriptVariable>
-                                <ScriptVariable>
-                                    <Name>guidePath</Name>
-                                    <Group />
-                                    <DefaultValue xsi:type="xsd:string">guidePath</DefaultValue>
-                                    <DataTypeString>System.String</DataTypeString>
-                                    <Direction>IN</Direction>
-                                </ScriptVariable>
-                                <ScriptVariable>
-                                    <Name>guideMark</Name>
-                                    <Group />
-                                    <DefaultValue xsi:type="xsd:string">guideMark</DefaultValue>
-                                    <DataTypeString>System.Collections.Generic.List&lt;System.String&gt;</DataTypeString>
-                                    <Direction>OUT</Direction>
-                                </ScriptVariable>
-                            </Value>
+                            <ListValue>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>Arguments</Name>
+                                    <Value xsi:type="ScriptVariable">
+                                        <Name>guideMine</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">guideMine</DefaultValue>
+                                        <DataTypeString>System.Collections.Generic.Dictionary&lt;System.String, System.String&gt;</DataTypeString>
+                                        <Direction>OUT</Direction>
+                                    </Value>
+                                </SerializationItem>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>Arguments</Name>
+                                    <Value xsi:type="ScriptVariable">
+                                        <Name>guidePath</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">guidePath</DefaultValue>
+                                        <DataTypeString>System.String</DataTypeString>
+                                        <Direction>IN</Direction>
+                                    </Value>
+                                </SerializationItem>
+                                <SerializationItem>
+                                    <IsListValue>false</IsListValue>
+                                    <Name>Arguments</Name>
+                                    <Value xsi:type="ScriptVariable">
+                                        <Name>guideMark</Name>
+                                        <Group />
+                                        <DefaultValue xsi:type="xsd:string">guideMark</DefaultValue>
+                                        <DataTypeString>System.Collections.Generic.List&lt;System.String&gt;</DataTypeString>
+                                        <Direction>OUT</Direction>
+                                    </Value>
+                                </SerializationItem>
+                            </ListValue>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -4806,9 +4953,9 @@ using (var workbook = new ClosedXML.Excel.XLWorkbook(filePath))
                             <Value xsi:type="xsd:string">(guideMark?.Count == 0) || (guideMark == null)</Value>
                         </SerializationItem>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
+                            <IsListValue>true</IsListValue>
                             <Name>Variables</Name>
-                            <Value xsi:type="ArrayOfScriptVariable" />
+                            <ListValue />
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -5116,9 +5263,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -5226,9 +5373,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                             <Name>Mapping</Name>
                         </SerializationItem>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
+                            <IsListValue>true</IsListValue>
                             <Name>Arguments</Name>
-                            <Value xsi:type="ArrayOfScriptVariable" />
+                            <ListValue />
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -5340,9 +5487,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">true</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -5536,9 +5683,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">true</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -5722,9 +5869,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">true</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -5958,9 +6105,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -6112,9 +6259,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -6255,9 +6402,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -6408,9 +6555,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -6560,9 +6707,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -6704,9 +6851,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -6847,9 +6994,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -6991,9 +7138,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -7144,9 +7291,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -7288,9 +7435,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -7450,9 +7597,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -7594,9 +7741,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -7737,9 +7884,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -7881,9 +8028,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -8025,9 +8172,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -8177,9 +8324,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -8320,9 +8467,9 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                     <Value xsi:type="xsd:boolean">false</Value>
                 </SerializationItem>
                 <SerializationItem>
-                    <IsListValue>false</IsListValue>
+                    <IsListValue>true</IsListValue>
                     <Name>Variables</Name>
-                    <Value xsi:type="ArrayOfScriptVariable" />
+                    <ListValue />
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
