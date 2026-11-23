@@ -1911,6 +1911,15 @@ checkURL = (url, paramName) =&gt;
                     <AssemblyName>LTools.Workflow, Version=1.0.6.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
                     <Properties>
                         <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>ComponentName</Name>
+                            <Value xsi:type="xsd:string">Множественное присвоение</Value>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>Annotation</Name>
+                        </SerializationItem>
+                        <SerializationItem>
                             <IsListValue>true</IsListValue>
                             <Name>Items</Name>
                             <ListValue>
@@ -2035,20 +2044,11 @@ checkURL = (url, paramName) =&gt;
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
-                            <Name>ComponentName</Name>
-                            <Value xsi:type="xsd:string">Множественное присвоение</Value>
-                        </SerializationItem>
-                        <SerializationItem>
-                            <IsListValue>false</IsListValue>
                             <Name>WaitBefore</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>WaitAfter</Name>
-                        </SerializationItem>
-                        <SerializationItem>
-                            <IsListValue>false</IsListValue>
-                            <Name>Annotation</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -3342,6 +3342,15 @@ checkURL = (url, paramName) =&gt;
                     <Properties>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
+                            <Name>ComponentName</Name>
+                            <Value xsi:type="xsd:string">Try-Catch</Value>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>Annotation</Name>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
                             <Name>Exc</Name>
                             <Value xsi:type="xsd:string">exception</Value>
                         </SerializationItem>
@@ -3388,20 +3397,11 @@ checkURL = (url, paramName) =&gt;
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
-                            <Name>ComponentName</Name>
-                            <Value xsi:type="xsd:string">Try-Catch</Value>
-                        </SerializationItem>
-                        <SerializationItem>
-                            <IsListValue>false</IsListValue>
                             <Name>WaitBefore</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>WaitAfter</Name>
-                        </SerializationItem>
-                        <SerializationItem>
-                            <IsListValue>false</IsListValue>
-                            <Name>Annotation</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
