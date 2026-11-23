@@ -709,12 +709,12 @@
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>X</Name>
-                    <Value xsi:type="xsd:double">469.94315018314995</Value>
+                    <Value xsi:type="xsd:double">470.34648351648337</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>Y</Name>
-                    <Value xsi:type="xsd:double">1962.8614718614722</Value>
+                    <Value xsi:type="xsd:double">1963.8614718614722</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -1911,15 +1911,6 @@ checkURL = (url, paramName) =&gt;
                     <AssemblyName>LTools.Workflow, Version=1.0.6.1, Culture=neutral, PublicKeyToken=null</AssemblyName>
                     <Properties>
                         <SerializationItem>
-                            <IsListValue>false</IsListValue>
-                            <Name>ComponentName</Name>
-                            <Value xsi:type="xsd:string">Множественное присвоение</Value>
-                        </SerializationItem>
-                        <SerializationItem>
-                            <IsListValue>false</IsListValue>
-                            <Name>Annotation</Name>
-                        </SerializationItem>
-                        <SerializationItem>
                             <IsListValue>true</IsListValue>
                             <Name>Items</Name>
                             <ListValue>
@@ -2004,11 +1995,20 @@ checkURL = (url, paramName) =&gt;
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
+                            <Name>ComponentName</Name>
+                            <Value xsi:type="xsd:string">Множественное присвоение</Value>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
                             <Name>WaitBefore</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>WaitAfter</Name>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>Annotation</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -3302,15 +3302,6 @@ checkURL = (url, paramName) =&gt;
                     <Properties>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
-                            <Name>ComponentName</Name>
-                            <Value xsi:type="xsd:string">Try-Catch</Value>
-                        </SerializationItem>
-                        <SerializationItem>
-                            <IsListValue>false</IsListValue>
-                            <Name>Annotation</Name>
-                        </SerializationItem>
-                        <SerializationItem>
-                            <IsListValue>false</IsListValue>
                             <Name>Exc</Name>
                             <Value xsi:type="xsd:string">exception</Value>
                         </SerializationItem>
@@ -3357,11 +3348,20 @@ checkURL = (url, paramName) =&gt;
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
+                            <Name>ComponentName</Name>
+                            <Value xsi:type="xsd:string">Try-Catch</Value>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
                             <Name>WaitBefore</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>WaitAfter</Name>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>Annotation</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -3821,7 +3821,7 @@ checkURL = (url, paramName) =&gt;
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>X</Name>
-                    <Value xsi:type="xsd:double">460.03481684981654</Value>
+                    <Value xsi:type="xsd:double">460.03481684981665</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -5720,7 +5720,7 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                             <Name>PointsList</Name>
                             <Value xsi:type="Point">
                                 <X>1109.8393406593407</X>
-                                <Y>2010.9998051948055</Y>
+                                <Y>2011.9998051948055</Y>
                             </Value>
                         </SerializationItem>
                     </ListValue>
@@ -6899,7 +6899,24 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                 <SerializationItem>
                     <IsListValue>true</IsListValue>
                     <Name>PointsList</Name>
-                    <ListValue />
+                    <ListValue>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>PointsList</Name>
+                            <Value xsi:type="Point">
+                                <X>574.98315018315</X>
+                                <Y>1947</Y>
+                            </Value>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>PointsList</Name>
+                            <Value xsi:type="Point">
+                                <X>575.38648351648339</X>
+                                <Y>1947</Y>
+                            </Value>
+                        </SerializationItem>
+                    </ListValue>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
