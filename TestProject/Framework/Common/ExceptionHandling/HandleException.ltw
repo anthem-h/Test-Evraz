@@ -392,7 +392,7 @@
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>SeqPath</Name>
-                            <Value xsi:type="xsd:string">".\\Компоненты\\ExceptionsFolder\\TakeScreenshot.ltw"</Value>
+                            <Value xsi:type="xsd:string">".\\Framework\\Common\\ExceptionHandling\\TakeScreenshot.ltw"</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -1364,7 +1364,7 @@
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>SeqPath</Name>
-                            <Value xsi:type="xsd:string">".\\Компоненты\\ExceptionsFolder\\LogExceptions.ltw"</Value>
+                            <Value xsi:type="xsd:string">".\\Framework\\Common\\ExceptionHandling\\LogException.ltw"</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -1621,7 +1621,7 @@
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>SeqPath</Name>
-                            <Value xsi:type="xsd:string">".\\Компоненты\\ExceptionsFolder\\LogExceptions.ltw"</Value>
+                            <Value xsi:type="xsd:string">".\\Framework\\Common\\ExceptionHandling\\LogException.ltw"</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>

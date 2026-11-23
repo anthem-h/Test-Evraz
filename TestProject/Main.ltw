@@ -421,6 +421,11 @@
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
+                    <Name>Annotation</Name>
+                    <Value xsi:type="xsd:string">Установка флага окончания</Value>
+                </SerializationItem>
+                <SerializationItem>
+                    <IsListValue>false</IsListValue>
                     <Name>TextTag</Name>
                 </SerializationItem>
                 <SerializationItem>
@@ -454,11 +459,6 @@
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>WaitAfter</Name>
-                </SerializationItem>
-                <SerializationItem>
-                    <IsListValue>false</IsListValue>
-                    <Name>Annotation</Name>
-                    <Value xsi:type="xsd:string">Установка флага окончания</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -695,7 +695,7 @@
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>ComponentName</Name>
-                    <Value xsi:type="xsd:string">Конец работы</Value>
+                    <Value xsi:type="xsd:string">End</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -794,7 +794,7 @@
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>SeqPath</Name>
-                            <Value xsi:type="xsd:string">".\\Компоненты\\Close\\CloseAllApplications.ltw"</Value>
+                            <Value xsi:type="xsd:string">".\\Framework\\End\\CloseAllApplications.ltw"</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -919,7 +919,7 @@
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>ComponentName</Name>
-                    <Value xsi:type="xsd:string">NextTransactionData</Value>
+                    <Value xsi:type="xsd:string">GetNextTransactionData</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -933,7 +933,7 @@
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>X</Name>
-                    <Value xsi:type="xsd:double">462.67481684981675</Value>
+                    <Value xsi:type="xsd:double">452.95481684981667</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -1019,7 +1019,7 @@
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>SeqPath</Name>
-                            <Value xsi:type="xsd:string">".\\Компоненты\\Transactions\\GetTransactionData.ltw"</Value>
+                            <Value xsi:type="xsd:string">".\\Framework\\Transactions\\GetNextTransactionData.ltw"</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -1178,7 +1178,7 @@
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>ComponentName</Name>
-                    <Value xsi:type="xsd:string">Обработка ошибок</Value>
+                    <Value xsi:type="xsd:string">ExceptionHandling</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -1192,7 +1192,7 @@
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>X</Name>
-                    <Value xsi:type="xsd:double">999.74934065934065</Value>
+                    <Value xsi:type="xsd:double">1003.4493406593407</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -1277,7 +1277,7 @@
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>SeqPath</Name>
-                            <Value xsi:type="xsd:string">".\\Компоненты\\ExceptionsFolder\\Exceptions.ltw"</Value>
+                            <Value xsi:type="xsd:string">".\\Framework\\Common\\ExceptionHandling\\HandleException.ltw"</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -1372,6 +1372,7 @@
                                     <Value xsi:type="ScriptVariable">
                                         <Name>flagEnd</Name>
                                         <Group />
+                                        <DefaultValue xsi:type="xsd:string">flagEnd</DefaultValue>
                                         <DataTypeString>System.Boolean</DataTypeString>
                                         <Direction>OUT</Direction>
                                     </Value>
@@ -1559,7 +1560,7 @@
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>SeqPath</Name>
-                            <Value xsi:type="xsd:string">".\\Компоненты\\Init\\Initilization.ltw"</Value>
+                            <Value xsi:type="xsd:string">".\\Framework\\Init\\InitApplications.ltw"</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -2347,6 +2348,10 @@ downloadPath = Path.Combine(downloadPath, "Downloads_RPA");</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
+                            <Name>Annotation</Name>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
                             <Name>TextTag</Name>
                         </SerializationItem>
                         <SerializationItem>
@@ -2381,10 +2386,6 @@ downloadPath = Path.Combine(downloadPath, "Downloads_RPA");</Value>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>WaitAfter</Name>
-                        </SerializationItem>
-                        <SerializationItem>
-                            <IsListValue>false</IsListValue>
-                            <Name>Annotation</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -2442,7 +2443,7 @@ downloadPath = Path.Combine(downloadPath, "Downloads_RPA");</Value>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
                                     <Name>SeqPath</Name>
-                                    <Value xsi:type="xsd:string">".\\Компоненты\\Excel\\UnionExcel.ltw"</Value>
+                                    <Value xsi:type="xsd:string">".\\Framework\\Process\\StageExcel\\UnionExcel.ltw"</Value>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -2616,6 +2617,10 @@ downloadPath = Path.Combine(downloadPath, "Downloads_RPA");</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
+                            <Name>Annotation</Name>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
                             <Name>TextTag</Name>
                         </SerializationItem>
                         <SerializationItem>
@@ -2649,10 +2654,6 @@ downloadPath = Path.Combine(downloadPath, "Downloads_RPA");</Value>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>WaitAfter</Name>
-                        </SerializationItem>
-                        <SerializationItem>
-                            <IsListValue>false</IsListValue>
-                            <Name>Annotation</Name>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -2710,7 +2711,7 @@ downloadPath = Path.Combine(downloadPath, "Downloads_RPA");</Value>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
                                     <Name>SeqPath</Name>
-                                    <Value xsi:type="xsd:string">".\\Компоненты\\ExceptionsFolder\\Exceptions.ltw"</Value>
+                                    <Value xsi:type="xsd:string">".\\Framework\\Common\\ExceptionHandling\\HandleException.ltw"</Value>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -3512,7 +3513,7 @@ downloadPath = Path.Combine(downloadPath, "Downloads_RPA");</Value>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
                                     <Name>SeqPath</Name>
-                                    <Value xsi:type="xsd:string">".\\Компоненты\\Web\\Download.ltw"</Value>
+                                    <Value xsi:type="xsd:string">".\\Framework\\Process\\StageWeb\\Download.ltw"</Value>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -3714,7 +3715,7 @@ downloadPath = Path.Combine(downloadPath, "Downloads_RPA");</Value>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
                                     <Name>SeqPath</Name>
-                                    <Value xsi:type="xsd:string">".\\Компоненты\\ExceptionsFolder\\Exceptions.ltw"</Value>
+                                    <Value xsi:type="xsd:string">".\\Framework\\Common\\ExceptionHandling\\HandleException.ltw"</Value>
                                 </SerializationItem>
                                 <SerializationItem>
                                     <IsListValue>false</IsListValue>
@@ -3898,14 +3899,16 @@ downloadPath = Path.Combine(downloadPath, "Downloads_RPA");</Value>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>ComponentName</Name>
-                    <Value xsi:type="xsd:string">Создание результата</Value>
+                    <Value xsi:type="xsd:string">Result</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>Annotation</Name>
                     <Value xsi:type="xsd:string">1) Создание единого файла и форматирование
 
-2) Использован ClosedXML для стабильности и скорости</Value>
+2) Использован ClosedXML для стабильности и скорости
+
+3) Удаление остаточных папок</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -3914,12 +3917,12 @@ downloadPath = Path.Combine(downloadPath, "Downloads_RPA");</Value>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>X</Name>
-                    <Value xsi:type="xsd:double">460.03481684981665</Value>
+                    <Value xsi:type="xsd:double">476.01648351648328</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>Y</Name>
-                    <Value xsi:type="xsd:double">1738.6847133060778</Value>
+                    <Value xsi:type="xsd:double">1709.7958244171891</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -4574,12 +4577,12 @@ using (var workbook = new ClosedXML.Excel.XLWorkbook(filePath))
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>X</Name>
-                    <Value xsi:type="xsd:double">422.63952380952389</Value>
+                    <Value xsi:type="xsd:double">419.86862637362628</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>Y</Name>
-                    <Value xsi:type="xsd:double">1666</Value>
+                    <Value xsi:type="xsd:double">1681.8294444444446</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -4649,7 +4652,7 @@ using (var workbook = new ClosedXML.Excel.XLWorkbook(filePath))
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>ComponentName</Name>
-                    <Value xsi:type="xsd:string">InitTransactionData</Value>
+                    <Value xsi:type="xsd:string">BuildTransactionQueue</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -4667,12 +4670,12 @@ using (var workbook = new ClosedXML.Excel.XLWorkbook(filePath))
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>X</Name>
-                    <Value xsi:type="xsd:double">466.38815018314995</Value>
+                    <Value xsi:type="xsd:double">456.49815018315007</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>Y</Name>
-                    <Value xsi:type="xsd:double">597.73443223443223</Value>
+                    <Value xsi:type="xsd:double">595.51221001221006</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -4753,7 +4756,7 @@ using (var workbook = new ClosedXML.Excel.XLWorkbook(filePath))
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>SeqPath</Name>
-                            <Value xsi:type="xsd:string">".\\Компоненты\\Web\\InitGuideData.ltw"</Value>
+                            <Value xsi:type="xsd:string">".\\Framework\\Transactions\\BuildTransactionQueue\\InitGuideData.ltw"</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -5193,7 +5196,7 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>ComponentName</Name>
-                    <Value xsi:type="xsd:string">Начало работы</Value>
+                    <Value xsi:type="xsd:string">Start</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -5292,7 +5295,7 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>SeqPath</Name>
-                            <Value xsi:type="xsd:string">".\\Компоненты\\Close\\CloseAllApplications.ltw"</Value>
+                            <Value xsi:type="xsd:string">".\\Framework\\End\\CloseAllApplications.ltw"</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -5421,6 +5424,11 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
+                    <Name>Annotation</Name>
+                    <Value xsi:type="xsd:string">Пояснение для проекта</Value>
+                </SerializationItem>
+                <SerializationItem>
+                    <IsListValue>false</IsListValue>
                     <Name>TextTag</Name>
                 </SerializationItem>
                 <SerializationItem>
@@ -5454,11 +5462,6 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>WaitAfter</Name>
-                </SerializationItem>
-                <SerializationItem>
-                    <IsListValue>false</IsListValue>
-                    <Name>Annotation</Name>
-                    <Value xsi:type="xsd:string">Пояснение для проекта</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -5620,6 +5623,11 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
+                    <Name>Annotation</Name>
+                    <Value xsi:type="xsd:string">Первый запуск</Value>
+                </SerializationItem>
+                <SerializationItem>
+                    <IsListValue>false</IsListValue>
                     <Name>TextTag</Name>
                 </SerializationItem>
                 <SerializationItem>
@@ -5653,11 +5661,6 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>WaitAfter</Name>
-                </SerializationItem>
-                <SerializationItem>
-                    <IsListValue>false</IsListValue>
-                    <Name>Annotation</Name>
-                    <Value xsi:type="xsd:string">Первый запуск</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -6845,7 +6848,7 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                             <Name>PointsList</Name>
                             <Value xsi:type="Point">
                                 <X>1411.4688644688645</X>
-                                <Y>1790.9347133060778</Y>
+                                <Y>1806.7641577505224</Y>
                             </Value>
                         </SerializationItem>
                     </ListValue>
@@ -6998,7 +7001,7 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                             <Name>PointsList</Name>
                             <Value xsi:type="Point">
                                 <X>574.98315018315</X>
-                                <Y>1947</Y>
+                                <Y>1949</Y>
                             </Value>
                         </SerializationItem>
                         <SerializationItem>
@@ -7006,7 +7009,7 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                             <Name>PointsList</Name>
                             <Value xsi:type="Point">
                                 <X>575.38648351648339</X>
-                                <Y>1947</Y>
+                                <Y>1949</Y>
                             </Value>
                         </SerializationItem>
                     </ListValue>
@@ -7636,7 +7639,24 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                 <SerializationItem>
                     <IsListValue>true</IsListValue>
                     <Name>PointsList</Name>
-                    <ListValue />
+                    <ListValue>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>PointsList</Name>
+                            <Value xsi:type="Point">
+                                <X>574.98315018315009</X>
+                                <Y>560</Y>
+                            </Value>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>PointsList</Name>
+                            <Value xsi:type="Point">
+                                <X>575.38648351648339</X>
+                                <Y>560</Y>
+                            </Value>
+                        </SerializationItem>
+                    </ListValue>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -7780,7 +7800,24 @@ dtSummary.Columns.Add("Вес", typeof(double));</Value>
                 <SerializationItem>
                     <IsListValue>true</IsListValue>
                     <Name>PointsList</Name>
-                    <ListValue />
+                    <ListValue>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>PointsList</Name>
+                            <Value xsi:type="Point">
+                                <X>575.38648351648339</X>
+                                <Y>789</Y>
+                            </Value>
+                        </SerializationItem>
+                        <SerializationItem>
+                            <IsListValue>false</IsListValue>
+                            <Name>PointsList</Name>
+                            <Value xsi:type="Point">
+                                <X>574.98315018315</X>
+                                <Y>789</Y>
+                            </Value>
+                        </SerializationItem>
+                    </ListValue>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>

@@ -3,6 +3,7 @@
     <WorkflowType>0</WorkflowType>
     <IsTestCase>false</IsTestCase>
     <UseArgs>false</UseArgs>
+    <CsvDelimiter>44</CsvDelimiter>
     <ColumnsTableTestData />
     <RowsTableTestData />
     <ScriptType>CS</ScriptType>
@@ -25,9 +26,9 @@
                 <Name>TextTag</Name>
             </SerializationItem>
             <SerializationItem>
-                <IsListValue>false</IsListValue>
+                <IsListValue>true</IsListValue>
                 <Name>Variables</Name>
-                <Value xsi:type="ArrayOfScriptVariable" />
+                <ListValue />
             </SerializationItem>
             <SerializationItem>
                 <IsListValue>false</IsListValue>
@@ -93,7 +94,7 @@
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
                         <Name>Message</Name>
-                        <Value xsi:type="xsd:string">"Инициализация настроек..."</Value>
+                        <Value xsi:type="xsd:string">"Чтение конфигурационного файла"</Value>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
@@ -268,9 +269,9 @@
                         <Value xsi:type="xsd:string">in_ConfigSheets</Value>
                     </SerializationItem>
                     <SerializationItem>
-                        <IsListValue>false</IsListValue>
+                        <IsListValue>true</IsListValue>
                         <Name>Variables</Name>
-                        <Value xsi:type="ArrayOfScriptVariable" />
+                        <ListValue />
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
@@ -395,6 +396,14 @@
                             </SerializationItem>
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
+                                <Name>WritePassword</Name>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
+                                <Name>WritePasswordEncrypted</Name>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>false</IsListValue>
                                 <Name>Bytes</Name>
                             </SerializationItem>
                             <SerializationItem>
@@ -429,12 +438,17 @@
                             </SerializationItem>
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
-                                <Name>TextTag</Name>
+                                <Name>IsCloseExcel</Name>
+                                <Value xsi:type="xsd:boolean">true</Value>
                             </SerializationItem>
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
+                                <Name>TextTag</Name>
+                            </SerializationItem>
+                            <SerializationItem>
+                                <IsListValue>true</IsListValue>
                                 <Name>Variables</Name>
-                                <Value xsi:type="ArrayOfScriptVariable" />
+                                <ListValue />
                             </SerializationItem>
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
@@ -532,6 +546,11 @@
                                     <SerializationItem>
                                         <IsListValue>false</IsListValue>
                                         <Name>IsStrongTyping</Name>
+                                        <Value xsi:type="xsd:boolean">false</Value>
+                                    </SerializationItem>
+                                    <SerializationItem>
+                                        <IsListValue>false</IsListValue>
+                                        <Name>IsSkipFilteredRows</Name>
                                         <Value xsi:type="xsd:boolean">false</Value>
                                     </SerializationItem>
                                     <SerializationItem>
@@ -634,9 +653,9 @@
                                 <Value xsi:type="xsd:string">dt_SettingsAndConstants</Value>
                             </SerializationItem>
                             <SerializationItem>
-                                <IsListValue>false</IsListValue>
+                                <IsListValue>true</IsListValue>
                                 <Name>Variables</Name>
-                                <Value xsi:type="ArrayOfScriptVariable" />
+                                <ListValue />
                             </SerializationItem>
                             <SerializationItem>
                                 <IsListValue>false</IsListValue>
@@ -731,9 +750,9 @@
                                         <Value xsi:type="xsd:string">!string.IsNullOrWhiteSpace(Row["Название"].ToString().Trim())</Value>
                                     </SerializationItem>
                                     <SerializationItem>
-                                        <IsListValue>false</IsListValue>
+                                        <IsListValue>true</IsListValue>
                                         <Name>Variables</Name>
-                                        <Value xsi:type="ArrayOfScriptVariable" />
+                                        <ListValue />
                                     </SerializationItem>
                                     <SerializationItem>
                                         <IsListValue>false</IsListValue>
@@ -924,7 +943,7 @@
         <ScriptVariable>
             <Name>out_Config</Name>
             <Group />
-            <Comment>Словарь с значениями настроек из конфигурационного файла</Comment>
+            <Comment>Словарь со значениями настроек из конфигурационного файла</Comment>
             <DataTypeString>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</DataTypeString>
             <Direction>OUT</Direction>
         </ScriptVariable>
