@@ -22,9 +22,5 @@
         <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestProject\Framework\Common\ExceptionHandling\HandleException.ltw</string>
         <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestProject\Framework\Process\StageExcel\UnionExcel.ltw</string>
         <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestProject\Framework\Process\StageExcel\UnionExcelVariants.ltw</string>
-        <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestProject\Framework\Process\StageWeb\Download.ltw</string>
-        <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestProject\Framework\Transactions\BuildTransactionQueue\InitGuideData.ltw</string>
-        <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestProject\Framework\Transactions\BuildTransactionQueue\InitGuideVariants.ltw</string>
-        <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestProject\Framework\Transactions\GetNextTransactionData.ltw</string>
     </LastOpenedItems>
 </LTProjectResources>
