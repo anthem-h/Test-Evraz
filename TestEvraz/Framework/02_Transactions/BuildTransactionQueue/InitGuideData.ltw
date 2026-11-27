@@ -1285,7 +1285,7 @@ flagSheets = sheetMark != null &amp;&amp; sheetMine != null;</Value>
                                             <SerializationItem>
                                                 <IsListValue>false</IsListValue>
                                                 <Name>SeqPath</Name>
-                                                <Value xsi:type="xsd:string">".\\Framework\\Transactions\\BuildTransactionQueue\\InitGuideVariants.ltw"</Value>
+                                                <Value xsi:type="xsd:string">".\\Framework\\02_Transactions\\BuildTransactionQueue\\InitGuideVariants.ltw"</Value>
                                             </SerializationItem>
                                             <SerializationItem>
                                                 <IsListValue>false</IsListValue>
@@ -1433,7 +1433,7 @@ flagSheets = sheetMark != null &amp;&amp; sheetMine != null;</Value>
                                             <SerializationItem>
                                                 <IsListValue>false</IsListValue>
                                                 <Name>ComponentID</Name>
-                                                <Value xmlns:q13="http://microsoft.com/wsdl/types/" xsi:type="q13:guid">0a8be0e8-1d02-4745-a067-b0cf10f2960c</Value>
+                                                <Value xmlns:q13="http://microsoft.com/wsdl/types/" xsi:type="q13:guid">f56bd70c-a1c9-417a-a83c-6d7e4e72f5f8</Value>
                                             </SerializationItem>
                                             <SerializationItem>
                                                 <IsListValue>false</IsListValue>

@@ -7,5 +7,15 @@
     <Git />
     <LastOpenedItems>
         <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestEvraz\Main.ltw</string>
+        <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestEvraz\Framework\Common\ExceptionHandling\LogException.ltw</string>
+        <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestEvraz\Framework\02_Transactions\SetTransactionStatus.ltw</string>
+        <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestEvraz\Framework\03_Process\StageExcel\UnionExcelVariants.ltw</string>
+        <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestEvraz\Framework\02_Transactions\BuildTransactionQueue\InitGuideVariants.ltw</string>
+        <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestEvraz\Framework\02_Transactions\BuildTransactionQueue\InitGuideData.ltw</string>
+        <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestEvraz\Framework\03_Process\StageExcel\UnionExcel.ltw</string>
+        <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestEvraz\Framework\03_Process\StageWeb\Download.ltw</string>
+        <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestEvraz\Framework\Common\KillAllProcesses.ltw</string>
+        <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestEvraz\Framework\01_Init\InitAllSettings.ltw</string>
+        <string>C:\Users\user\Desktop\PetProjects\Test-Evraz\TestEvraz\Framework\01_Init\InitApplications.ltw</string>
     </LastOpenedItems>
 </LTProjectResources>

@@ -403,7 +403,7 @@ matchedFolder = Directory
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
                             <Name>SeqPath</Name>
-                            <Value xsi:type="xsd:string">".\\Framework\\Process\\StageExcel\\UnionExcelVariants.ltw"</Value>
+                            <Value xsi:type="xsd:string">".\\Framework\\03_Process\\StageExcel\\UnionExcelVariants.ltw"</Value>
                         </SerializationItem>
                         <SerializationItem>
                             <IsListValue>false</IsListValue>
@@ -457,17 +457,6 @@ matchedFolder = Directory
                                         <DefaultValue xsi:type="xsd:string">matchedFolder</DefaultValue>
                                         <DataTypeString>System.String</DataTypeString>
                                         <Direction>IN</Direction>
-                                    </Value>
-                                </SerializationItem>
-                                <SerializationItem>
-                                    <IsListValue>false</IsListValue>
-                                    <Name>Arguments</Name>
-                                    <Value xsi:type="ScriptVariable">
-                                        <Name>reportPath</Name>
-                                        <Group />
-                                        <DefaultValue xsi:type="xsd:string">reportPath</DefaultValue>
-                                        <DataTypeString>System.String</DataTypeString>
-                                        <Direction>OUT</Direction>
                                     </Value>
                                 </SerializationItem>
                                 <SerializationItem>

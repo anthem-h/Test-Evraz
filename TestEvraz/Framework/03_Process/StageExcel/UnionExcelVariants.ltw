@@ -108,7 +108,7 @@
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>ComponentName</Name>
-                    <Value xsi:type="xsd:string">Принятие решения</Value>
+                    <Value xsi:type="xsd:string">Найдена папка?</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -400,7 +400,7 @@ reportPath = Directory.GetFiles(matchedFolder, "*.xlsx")
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>ComponentName</Name>
-                    <Value xsi:type="xsd:string">Принятие решения</Value>
+                    <Value xsi:type="xsd:string">Отчет?</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -1071,7 +1071,7 @@ flagHeaders = colMarkName != null &amp;&amp; colWeightName != null</Value>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>ComponentName</Name>
-                    <Value xsi:type="xsd:string">Принятие решения</Value>
+                    <Value xsi:type="xsd:string">Заголовки?</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
@@ -3332,6 +3332,7 @@ if (groupedRows.Count &gt; 0)
                 <SerializationItem>
                     <IsListValue>false</IsListValue>
                     <Name>Result</Name>
+                    <Value xsi:type="xsd:string">true</Value>
                 </SerializationItem>
                 <SerializationItem>
                     <IsListValue>false</IsListValue>

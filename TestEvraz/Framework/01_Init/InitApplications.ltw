@@ -311,7 +311,7 @@ checkURL = (url, paramName) =&gt;
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
                         <Name>SeqPath</Name>
-                        <Value xsi:type="xsd:string">".\\Framework\\Init\\InitAllSettings.ltw"</Value>
+                        <Value xsi:type="xsd:string">".\\Framework\\01_Init\\InitAllSettings.ltw"</Value>
                     </SerializationItem>
                     <SerializationItem>
                         <IsListValue>false</IsListValue>
