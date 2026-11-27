@@ -29,3 +29,5 @@
 - Платформа: Primo Studio
 - Шаблон архитектуры: REFramework (Excel)
 - Интеграции и приложения: Google Chrome, MS Excel
+
+Документация к проекту находится в файле: Документация RPA_REFramework.docx
