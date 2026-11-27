@@ -1,4 +1,4 @@
-# **README: Primo RPA (REFramework + Excel)**
+# **Primo RPA (REFramework + Excel)**
 
 *Автоматизация сверки данных (ЕГРЮЛ / Excel) на базе шаблона Primo (REFramework) с локальным управлением транзакциями через Excel-таблицы.*
 
